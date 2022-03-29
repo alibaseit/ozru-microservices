@@ -6,3 +6,4 @@ target/
 *.iws
 *.iml
 *.ipr
+/ozru-user-service/dependency-reduced-pom.xml
