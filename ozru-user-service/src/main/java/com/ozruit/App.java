@@ -1,7 +1,6 @@
 package com.ozruit;
 
 
-import com.ozruit.services.HelloServiceImpl;
 import com.ozruit.services.UserServiceImpl;
 import io.grpc.Server;
 import io.grpc.ServerBuilder;
@@ -18,7 +17,6 @@ public class App {
 
     public App() {
         this.server = ServerBuilder.forPort(8080)
-                .addService(new HelloServiceImpl())
                 .addService(new UserServiceImpl())
                 .build();
     }
