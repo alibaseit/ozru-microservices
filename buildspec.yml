@@ -11,5 +11,5 @@ phases:
       - cp ozru-user-service/target/ozru-user-service-0.0.1-SNAPSHOT.jar dist
 artifacts:
   files:
-    - '**/*'
-    base-directory: 'dist'
+    - './**/*'
+  base-directory: 'dist'
