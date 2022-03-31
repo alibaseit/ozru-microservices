@@ -8,7 +8,8 @@ phases:
     commands:
       - java -version
       - mvn clean install
+      - cp ozru-user-service/target/ozru-user-service-0.0.1-SNAPSHOT.jar dist
 artifacts:
   files:
-    - ozru-user-service/target/ozru-user-service-0.0.1-SNAPSHOT.jar
-  base-directory: 'ozru-user-service/target'
+    - '**/*'
+    base-directory: 'dist'
