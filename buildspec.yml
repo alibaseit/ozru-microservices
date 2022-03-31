@@ -1,0 +1,14 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      java: corretto8
+  build:
+    commands:
+      - java -version
+      - mvn clean install
+artifacts:
+  files:
+    - '**/*'
+  base-directory: 'ozru-user-service/target/ozru-user-service-0.0.1-SNAPSHOT'
