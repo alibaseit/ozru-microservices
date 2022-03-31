@@ -11,4 +11,4 @@ phases:
 artifacts:
   files:
     - '**/*'
-  base-directory: 'ozru-user-service/target/ozru-user-service-0.0.1-SNAPSHOT'
+  base-directory: 'ozru-user-service/target'
