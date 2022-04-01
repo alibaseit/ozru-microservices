@@ -1,8 +1,6 @@
-package com.myorg;
+package com.ozruit;
 
 import software.amazon.awscdk.core.App;
-
-import java.util.Arrays;
 
 public class CdkApp {
     public static void main(final String[] args) {

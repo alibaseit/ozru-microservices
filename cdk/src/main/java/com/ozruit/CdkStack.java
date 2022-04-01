@@ -1,4 +1,4 @@
-package com.myorg;
+package com.ozruit;
 
 import software.amazon.awscdk.core.Construct;
 import software.amazon.awscdk.core.Stack;

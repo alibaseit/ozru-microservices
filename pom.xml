@@ -11,6 +11,7 @@
     <modules>
         <module>ozru-grpc-services</module>
         <module>ozru-user-service</module>
+        <module>cdk</module>
     </modules>
 
 </project>

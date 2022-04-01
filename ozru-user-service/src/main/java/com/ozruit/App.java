@@ -12,11 +12,12 @@ import org.slf4j.LoggerFactory;
  */
 public class App {
     private static final Logger LOGGER = LoggerFactory.getLogger(App.class);
+    private static final int PORT = 8080;
 
     private final Server server;
 
     public App() {
-        this.server = ServerBuilder.forPort(8080)
+        this.server = ServerBuilder.forPort(PORT)
                 .addService(new UserServiceImpl())
                 .build();
     }
@@ -25,7 +26,7 @@ public class App {
         try {
             LOGGER.info("Starting App");
             server.start();
-            LOGGER.info("App is running");
+            LOGGER.info("App is running, listens on port: {}", PORT);
             server.awaitTermination();
             LOGGER.info("App stopped");
         } catch (Exception e) {
